@@ -11,8 +11,14 @@ $(document).ready(function() {
            url: url,
            data: $("#contato").serialize(), // serializes the form's elements.
            success: function(data)
-           {
-               $('#feedback').html(data); // show response from the php script.
+           { 
+                // if(data.indexOf('Erro') !== - 1){
+                //   $('#feedback').css('color','#515769')
+                // }else{
+                //   $('#feedback').css('color','#FFFFFF')
+                // }
+
+              $('#feedback').hide().html(data).slideDown('slow'); // show response from the php script.
            }
          });
 
