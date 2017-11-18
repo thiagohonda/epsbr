@@ -11,8 +11,8 @@ $(document).ready(function() {
            url: url,
            data: $("#contato").serialize(), // serializes the form's elements.
            success: function(data)
-           {
-               $('#feedback').html(data); // show response from the php script.
+           {  
+              $('#feedback').hide().html(data).slideDown('slow'); // show response from the php script.
            }
          });
 

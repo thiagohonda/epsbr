@@ -126,6 +126,12 @@ h4 {
   font-size: 22px;
 }
 
+#feedback{
+  font-size: 14px;
+  font-family: Hind, sans-serif;
+  color: #17bed2;
+}
+
 ::selection {
   color: #fff;
   background: #17bed2;
